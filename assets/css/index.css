@@ -1,5 +1,11 @@
+:root{
+    --color-azul-claro: #12A1DB;
+    --color-azul-oscuro: #08435C;
+    --color-naranja: #E86207;
+}
+
 body{
-    background-color: #12A1DB;
+    background-color: var(--color-azul-claro);
     background-image: url(../img/patron.png);
     background-repeat: repeat;
     font-family: 'Roboto', sans-serif;
@@ -37,7 +43,7 @@ body{
 
 .menu__link:hover{
     text-decoration: none;
-    color: #E86207;
+    color: var(--color-naranja);
     transition: 0.5s;
 }
 
@@ -83,7 +89,7 @@ body{
 .busqueda_boton{
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #E86207;
+    background-color: var(--color-naranja);
     color: #ffffff;
     border: none;
     border-radius: 15px;
@@ -91,7 +97,7 @@ body{
 }
 
 .busqueda_boton:hover{
-    background-color: #08435C;
+    background-color: var(--color-azul-oscuro);
 }
 
 .caja_busqueda_imagen{
