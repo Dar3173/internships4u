@@ -1,0 +1,17 @@
+/*
+Colores basicos:
+
+    color-azul-claro: #12A1DB
+    color-azul-oscuro: #08435C
+    color-naranja: #E86207
+
+Tipografia:
+    'Roboto', sans-serif.
+
+Enlace head tipografia:
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+*/
