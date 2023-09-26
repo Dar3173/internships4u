@@ -1,0 +1,60 @@
+header{
+    position: fixed;
+    margin: auto;
+}
+
+.register{
+    display: flex;
+    padding: 5%;
+
+}
+
+.img1{
+    width: 700px;
+    height: 700px;
+    
+}
+
+.texto{
+    display: grid;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+h1{
+    width: 50%;
+    font-size: 70px;
+    padding: 10% 10% 0 10%;
+    color: #08435C;
+    font-weight: bold;
+}
+
+h5{
+    color: #08435C;
+}
+
+.txt{
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #08435C;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover{
+    background-color: #E86207;
+}
+
