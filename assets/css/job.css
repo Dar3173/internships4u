@@ -1,0 +1,66 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.offer{
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    color: #08435C;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.company-logo{
+    width: 200px;
+    height: 200px;
+}
+
+.boton-postularse{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--color-naranja);
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.offer-details{
+    padding: 10px;
+}
+
+.company-information{
+    width: 30%;
+    border: 1px solid #08435C;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+h2{
+    padding: 10px;
+    font-weight: bold;
+    color: #08435C;
+    font-size: 18px;
+}
+
+h3{
+    padding: 10px;
+    font-style: italic;
+    font-size: 18px;
+}
