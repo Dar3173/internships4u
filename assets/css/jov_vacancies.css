@@ -1,0 +1,65 @@
+.container_informativo{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.titulo_temporada{
+    flex: 1;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: var(--color-azul-oscuro);
+}
+
+.texto_temporada{
+    flex: 2;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.caja_tarjetas_producto{
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+}
+
+.tarjetas{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 6px;
+    background: #ffffff;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.tarjetas:hover{
+    transform: translateY(-3%);
+}
+
+.tarjetas img{
+    width: 100%;
+    height: 310px;
+}
+
+.tarjeta_contenido{
+    padding: 50px 15px 50px 15px;
+    text-align: center;
+}
+
+.tarjeta_titulo{
+    font-weight: bold;
+    color: var(--color-azul-claro);
+    font-size: 30px;
+}
+
+.tarjeta_texto{
+    font-weight: 100;
+    color: var(--color-azul-oscuro);
+}

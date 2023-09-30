@@ -11,13 +11,12 @@
     <script src="https://kit.fontawesome.com/dcff342a50.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
-
-
+    <link rel="stylesheet" href="./assets/css/jov_vacancies.css" />
 </head>
 
 <body>
     <header class="menu">
-        <img class="logo" src="assets/img/internships4u_logo.png" alt="logo Internships4u">
+        <a href="./index.html" title="inicio"><img class="logo" src="assets/img/internships4u_logo.png" alt="logo Internships4u" ></a>
             <nav>
                 <ul class="menu__lista">
                     <li class="menu__item"><a class="menu__link" href="#">Empresas</a></li>
@@ -32,8 +31,13 @@
             <div class="busqueda">
                 <h1 class="texto_busqueda">Encuentra la práctica perfecta para adquirir experiencia real y desarrollar tus habilidades.</h1>
                 <div class="caja_busqueda">
-                    <input class="busqueda_texto" type="text" placeholder="Cargo o categoría" autocomplete="off">
-                    <input class="busqueda_boton" type="submit" value="Buscar">
+                    <input class="busqueda_texto" type="text" id="busquedaInput" placeholder="Cargo o categoría" autocomplete="off" list="sugerencias">
+                    <datalist id="sugerencias">
+                    </datalist>
+                    <input class="busqueda_boton" type="submit" value="Buscar" id="buscarButton">
+                    <ul id="sugerenciasLista">
+                    </ul>
+
                 </div>
             </div>
             <div class="caja_busqueda_imagen">

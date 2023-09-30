@@ -160,4 +160,26 @@ body, html{
     color: var(--color-azul-oscuro);
 }
 
+@media screen and (max-width: 768px) {
+    .menu {
+        height: auto;
+    }
+
+    .menu__lista {
+        flex-direction: column;
+    }
+
+    .busqueda {
+        padding: 10px;
+    }
+
+    .texto_busqueda {
+        font-size: 16px;
+    }
+
+    .caja_busqueda {
+        flex-direction: column;
+    }
+}
+
 
