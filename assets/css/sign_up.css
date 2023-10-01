@@ -27,7 +27,7 @@ header{
 h1{
     width: 50%;
     font-size: 70px;
-    padding: 10% 10% 0 10%;
+    padding: 10%;
     color: #08435C;
     font-weight: bold;
 }
@@ -61,3 +61,14 @@ h5{
     background-color: #E86207;
 }
 
+.error{
+    color: red;
+}
+
+.texto *{
+    padding-bottom: 5px;
+}
+
+.register_button{
+    padding: 5px;
+}

@@ -16,46 +16,104 @@
 
 <body>
     <header class="menu">
-        <a href="./index.html" title="inicio"><img class="logo" src="assets/img/internships4u_logo.png" alt="logo Internships4u" ></a>
+        <a href="./index.html" title="inicio"><img class="logo" src="assets/img/internships4u_logo.png"
+                alt="logo Internships4u"></a>
     </header>
     <div class="register">
         <img src="./assets/img/png/mujer_estudiante.png" alt="mujer_estudiante" class="img1">
-        <div class="texto">
-            <h1 class="titulo">Registro</h1>
-            <p class="parrafo"> Desde practicas locales hasta oportunindades internacionales, nuestra plataforma te
-                conecta con empresas lideres que valoran el talento emergente.</p>
-            <div class="nombre">
-                <h5>Nombre Completo</h5>
-                <input class="txt" type="text" placeholder="Nombre completo" autocomplete="off" required>
+        <form id="registroForm" action="#.html">
+            <div class="texto">
+                <h1 class="titulo">Registro</h1>
+                <p class="parrafo"> Desde practicas locales hasta oportunindades internacionales, nuestra plataforma te
+                    conecta con empresas lideres que valoran el talento emergente.</p>
+                <div class="nombre">
+                    <h5>Nombre Completo</h5>
+                    <input class="txt" type="text" placeholder="Nombre completo" autocomplete="off" id="nombre" required>
+                <p class="error" id="nombreError"></p>
+                </div>
+                <div class="dob">
+                    <h5>Fecha de nacimiento</h5>
+                    <input class="txt" type="date" autocomplete="off" id="dob" required>
+                    <p class="error" id="dobError"></p>
+                </div>
+                <div class="telefono">
+                    <h5>Telefono</h5>
+                    <input id="tel" class="txt" type="tel" placeholder="10 digitos" autocomplete="off" required maxlength="10"
+                        minlength="10">
+                        <p class="error" id="telError"></p>
+                </div>
+                <div class="email">
+                    <h5>Correo electronico</h5>
+                    <input id="email" class="txt" type="email" placeholder="tu@email.com" autocomplete="off" required>
+                    <p class="error" id="emailError"></p>
+                </div>
+                <div class="pass">
+                    <h5>Contraseña</h5>
+                    <input id="pass" class="txt" type="password" placeholder="Contraseña" maxlength="10"
+                    minlength="10" required>
+                </div>
+                <div class="tyc">
+                    <label for="tyc">
+                        <input class="checkbox" type="checkbox" value="tyc">
+                        Acepta terminos y condiciones</label>
+                </div>
+                <div class="register_button">
+                    <input class="button" type="submit" value="Registrarse">
+                </div>
             </div>
-            <div class="dob">
-                <h5>Fecha de nacimiento</h5>
-                <input class="txt" type="date" autocomplete="off" required>
-            </div>
-            <div class="telefono">
-                <h5>Telefono</h5>
-                <input class="txt" type="tel" placeholder="10 digitos" autocomplete="off" required maxlength="10"
-                    minlength="10">
-            </div>
-            <div class="email">
-                <h5>Correo electronico</h5>
-                <input class="txt" type="email" placeholder="tu@email.com" autocomplete="off" required>
-            </div>
-            <div class="pass">
-                <h5>Contraseña</h5>
-                <input class="txt" type="password" placeholder="Contraseña"  required>
-            </div>
-            <div class="tyc">
-                <label for="tyc">
-                <input class="checkbox" type="checkbox" value="tyc">
-                Acepta terminos y condiciones</label>
-            </div>
-            <div class="register_button">
-                <input class="button" type="submit" value="Registrarse">
-            </div>
-        </div>
     </div>
+    </form>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const registroForm = document.getElementById("registroForm");
+    
+            registroForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // Evitar que el formulario se envíe
+    
+                // Capturar los valores de los campos del formulario
+                const nombre = document.getElementById("nombre").value;
+                const dob = document.getElementById("dob").value;
+                const telefono = document.getElementById("tel").value;
+                const email = document.getElementById("email").value;
+                const pass = document.getElementById("pass").value;
+    
+                // Realizar validaciones aquí
+                if (!/^[a-zA-Z]+$/.test(nombre)) {
+                    nombreError.textContent = "Ingresa solo letras en el nombre(a-z)";
+                return;
+                }
+                if (!/^[0-9]+$/.test(telefono)) {
+    telError.textContent = "Ingresa solo números en el teléfono.";
+    return;
+}
+
+                if (email.trim() === "") {
+                    alert("Por favor, ingresa un email valido.");
+                    return;
+                }
+
+                if (pass.trim() === "") {
+                    alert("el campo contraseña no puede estar en blanco.");
+                    return;
+                }
+                // Realiza otras validaciones según tus necesidades
+    
+                // Si las validaciones son exitosas, puedes almacenar los datos en variables
+                const datosUsuario = {
+                    nombre: nombre,
+                    dob: dob,
+                    telefono: telefono,
+                    email: email,
+                    pass: pass,
+                    // Almacena otros datos del usuario aquí
+                };
+    
+                window.location.href = "#.html";
+            });
+        });
+    </script>
 </body>
 
 </html>
