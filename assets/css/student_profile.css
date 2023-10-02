@@ -1,0 +1,100 @@
+
+
+.imagen{  
+
+    position: fixed;
+    top: 17%;
+    margin-left: -10%;
+        
+}
+
+
+h1{
+    width: 100%;
+    font-size: 40px;
+    padding: 10% 10% 4% 10%;
+    color: #08435C;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+h5{
+    color: #08435C;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px 40px;
+    position: fixed;
+    margin: auto;
+    margin-top: 13%;
+    margin-left: 2.5%;
+    margin-right: 8%;
+    width: 375px;
+    padding: 15px 0px 0px 0px;
+}
+.nombre{
+    width: 409px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 5%;
+
+}
+
+.descripcion{
+    width: 409px;
+    height: 600px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 5%;
+
+}
+
+.busqueda{
+    position: fixed;
+    margin-top: 15%;
+    margin-left: 55%;
+
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.busqueda_texto2{
+    width: 410px;
+    height: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.button2{
+    width: 10%;
+    position: fixed;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #08435C;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    
+    
+}
+.register_button2{
+    
+    position: fixed;
+    margin-top: 16%;
+    margin-left: 14%;
+}
+
+.button2:hover{
+    background-color: #E86207;
+}
