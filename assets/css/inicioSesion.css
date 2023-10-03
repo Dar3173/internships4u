@@ -30,29 +30,46 @@
   
 
   #usuario, #contraseña {
-    border-radius: 7px; 
     width: 363px;
     height: 21px; 
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 10px;
+    cursor: pointer;
   }
 
   .boton-iniciar-sesion button {
     background-color: #E86207; 
-    color: white; 
-    border-radius: 7px; 
-    width: 370px; 
-    height: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
     
+  }
+
+  .boton-iniciar-sesion button:hover{
+    background-color: #08435C;
   }
   
 .boton-registrarse button {
-    background-color: #08435C; 
-    color: white; 
-    border-radius: 7px; 
-    width: 370px; 
-    height: 25px; 
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #08435C;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
   }
   
-
+  .boton-registrarse button:hover{
+    background-color: #E86207; 
+  }
   
 #imagen-derecha {
     position: absolute; 
