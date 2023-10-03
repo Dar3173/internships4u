@@ -63,3 +63,7 @@
     font-weight: 100;
     color: var(--color-azul-oscuro);
 }
+
+a{
+    text-decoration: none;
+}
